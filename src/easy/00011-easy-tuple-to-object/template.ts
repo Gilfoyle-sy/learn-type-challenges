@@ -2,9 +2,6 @@ type TupleToObject<T extends readonly PropertyKey[]> = {
   [K in T[number]]: K
 }
 
-
-
-
 // as const的作用是将一个变量变成只读的常量，即不能修改这个变量的值，具体如下
 let a = '123' as const
 // const a = '123'
